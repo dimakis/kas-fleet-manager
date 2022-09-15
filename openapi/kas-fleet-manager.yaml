@@ -1156,18 +1156,15 @@ components:
           type: string
         ingress_throughput_per_sec:
           description: 'Maximum ingress throughput per second available to this Kafka instance size.'
-          type: object
           $ref: '#/components/schemas/SupportedKafkaSizeBytesValueItem'
         egress_throughput_per_sec:
           description: 'Maximum egress throughput per second available to this Kafka instance size.'
-          type: object
           $ref: '#/components/schemas/SupportedKafkaSizeBytesValueItem'
         total_max_connections:
           description: 'Maximum amount of total connections available to this Kafka instance size.'
           type: integer
         max_data_retention_size:
           description: 'Maximum data storage available to this Kafka instance size.'
-          type: object
           $ref: '#/components/schemas/SupportedKafkaSizeBytesValueItem'
         max_partitions:
           description: 'Maximum amount of total partitions available to this Kafka instance size.'
@@ -1180,7 +1177,6 @@ components:
           type: integer
         max_message_size:
           description: 'Maximum message size available to this Kafka instance size.'
-          type: object
           $ref: '#/components/schemas/SupportedKafkaSizeBytesValueItem'
         min_in_sync_replicas:
           description: "Minimum number of in-sync replicas."
